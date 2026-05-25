@@ -131,3 +131,49 @@ footer{
   padding:20px;
   margin-top:30px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.card, .gallery-box img, .btn, button {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.gallery-box img:hover {
+  transform: scale(1.05);
+}
+
+.btn:hover, button:hover {
+  background: white;
+  color: #ff4d00;
+  border: 1px solid #ff4d00;
+}
+
+.active {
+  color: #ff4d00;
+}
+
+.feedback-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dark-mode {
+  background: #111;
+  color: white;
+}
+
+.dark-mode .card,
+.dark-mode .feedback-box {
+  background: #222;
+  color: white;
+}
