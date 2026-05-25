@@ -7,3 +7,6 @@ function showMessage() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
+function showMessage() {
+  alert("Thank you for contacting ATHLETIX!");
+}
